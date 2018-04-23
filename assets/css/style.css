@@ -1,0 +1,583 @@
+html,
+body {
+  margin: 0px;
+  overflow-x: hidden; }
+
+#main {
+  width: 100%;
+  min-height: 400px; }
+  #main .headerSosial {
+    width: 100%;
+    min-height: 50px;
+    border: 1px solid;
+    background: #1D1D1D; }
+    #main .headerSosial .content {
+      width: 100%;
+      min-height: 50px;
+      border: 1px solid;
+      font-size: 14px; }
+      #main .headerSosial .content .leftSide {
+        float: left;
+        max-width: 400px;
+        padding-top: 11px;
+        color: #999999; }
+        #main .headerSosial .content .leftSide .newyork {
+          margin-right: 10px; }
+        #main .headerSosial .content .leftSide .celcius {
+          margin-right: 11px; }
+      #main .headerSosial .content .rightSide {
+        padding-top: 11px;
+        min-height: 50px;
+        border: 1px solid;
+        float: right;
+        max-width: 450px; }
+        #main .headerSosial .content .rightSide .login {
+          margin-right: 27px;
+          font-size: 14px;
+          display: inline-block; }
+          #main .headerSosial .content .rightSide .login a {
+            color: white;
+            -webkit-transition: color .2s ease-in;
+            text-decoration-line: none; }
+            #main .headerSosial .content .rightSide .login a:hover {
+              color: #999999; }
+        #main .headerSosial .content .rightSide .lang {
+          margin-right: 27px;
+          display: inline-block; }
+          #main .headerSosial .content .rightSide .lang a {
+            color: #999999;
+            text-decoration-line: none;
+            -webkit-transition: color .2s ease-in; }
+            #main .headerSosial .content .rightSide .lang a:hover {
+              color: #5C5C5C; }
+          #main .headerSosial .content .rightSide .lang .drop {
+            display: none;
+            position: absolute;
+            width: 99px !important;
+            padding-left: 0px;
+            top: 40px;
+            right: -13px;
+            box-shadow: 0 1px 15px rgba(0, 0, 0, 0.2); }
+            #main .headerSosial .content .rightSide .lang .drop a {
+              padding-left: 11px; }
+            #main .headerSosial .content .rightSide .lang .drop li {
+              padding-top: 8px;
+              list-style: none;
+              padding-bottom: 5px; }
+            #main .headerSosial .content .rightSide .lang .drop .bord {
+              width: 100%;
+              border-bottom: 1px solid #EEEEEE; }
+            #main .headerSosial .content .rightSide .lang .drop .border-style {
+              border-bottom: 2px solid; }
+        #main .headerSosial .content .rightSide .sosials {
+          display: inline-flex; }
+          #main .headerSosial .content .rightSide .sosials a {
+            margin-right: 20px;
+            color: #999999;
+            -webkit-transition: color .2s ease-in; }
+            #main .headerSosial .content .rightSide .sosials a:hover {
+              color: #5C5C5C; }
+  @media only screen and (max-width: 991px) {
+    #main .sosials {
+      display: none !important; } }
+  @media only screen and (max-width: 768px) {
+    #main .sosials {
+      display: inline-flex !important; }
+    #main .leftSide,
+    #main .rightSide {
+      float: none !important;
+      clear: both;
+      margin: 0 auto; } }
+  @media screen and (max-width: 480px) {
+    #main .sosials {
+      display: none !important; }
+    #main .content {
+      text-align: center !important; }
+    #main .leftSide .leftul {
+      width: 210px;
+      display: inline-flex; } }
+  #main .logoSection {
+    width: 100%;
+    height: 152px;
+    padding-top: 38px; }
+  @media screen and (max-width: 991px) {
+    #main .logoImg {
+      margin: 0 auto; }
+    #main .mobileButton {
+      display: block !important;
+      position: relative;
+      top: -13px;
+      outline: none !important; }
+      #main .mobileButton .mBtn {
+        outline: none;
+        border-color: white;
+        border-radius: 0px; } }
+  #main .mobileButton {
+    display: none; }
+  #main .header {
+    width: 100%;
+    height: 64px;
+    padding-top: 18px;
+    background: #DA0000;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+    z-index: 999; }
+    #main .header .maxHeight {
+      height: 100%; }
+    #main .header li {
+      list-style: none;
+      margin: 0 auto; }
+    #main .header .formBox {
+      position: relative;
+      width: 85px; }
+      #main .header .formBox .input {
+        opacity: 0;
+        top: -3px;
+        width: 0px;
+        height: 38px;
+        right: 8%;
+        position: absolute;
+        border-radius: 26px;
+        border: none;
+        outline: none;
+        padding-left: 15px !important;
+        background: #F0F0F0;
+        transition-duration: 0.8s; }
+      #main .header .formBox .search {
+        position: absolute;
+        z-index: 100;
+        top: 6px;
+        right: 12%;
+        cursor: pointer;
+        color: white; }
+    #main .header .links {
+      height: 100%; }
+      #main .header .links:hover {
+        border-bottom: 2px solid white; }
+      #main .header .links a {
+        color: white;
+        text-decoration-line: none; }
+    #main .header .hideContent {
+      display: none; }
+  @media screen and (max-width: 991px) {
+    #main .header li {
+      display: none; }
+    #main .header .hideContent {
+      display: block; } }
+  #main .mobileContent {
+    width: 256px;
+    height: 100% !important;
+    position: fixed;
+    background: white;
+    top: 0px;
+    left: -300px;
+    transition-duration: 0.6s;
+    transition-delay: 0.3s; }
+    #main .mobileContent .closee {
+      background: red;
+      color: white;
+      position: relative;
+      left: 256px;
+      width: 40px;
+      height: 40px;
+      border: none;
+      outline: none;
+      font-weight: 800;
+      font-size: 20px; }
+    #main .mobileContent .mlinks {
+      padding-left: 10px;
+      top: -25px;
+      position: relative;
+      display: block;
+      margin-bottom: 14px;
+      width: 100%;
+      padding-bottom: 6px;
+      border-bottom: 2px solid transparent;
+      transition-duration: 0.2s; }
+      #main .mobileContent .mlinks:hover {
+        border-bottom: 2px solid #777777; }
+      #main .mobileContent .mlinks a {
+        color: #999999;
+        text-decoration-line: none; }
+  #main .centerStyle {
+    display: flex;
+    justify-content: center; }
+    #main .centerStyle li {
+      display: inline-block;
+      text-align: center;
+      border-bottom: 1px solid #f0f0f0;
+      border-right: 1px solid #f0f0f0; }
+      #main .centerStyle li .blockk {
+        padding: 0 20px 7px;
+        width: 100%;
+        font-size: 17px;
+        line-height: 28px;
+        font-weight: 600;
+        z-index: 0;
+        text-decoration-line: none;
+        color: #777777; }
+        #main .centerStyle li .blockk .icons {
+          display: block;
+          margin-bottom: 4px;
+          text-rendering: auto; }
+    #main .centerStyle .bordNone {
+      border-right: none !important; }
+  @media only screen and (max-width: 767px) {
+    #main .centerStyle {
+      display: none; } }
+
+@media only screen and (max-width: 767px) {
+  #main #wrapper {
+    padding: 0 13px; } }
+@-webkit-keyframes marqueeAnimation-54766530 {
+  100% {
+    margin-left: -1704.34px; } }
+#main #wrapper .news-animate {
+  margin-top: 30px;
+  color: #777;
+  font-family: "Source Sans Pro",sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  word-wrap: break-word;
+  margin-bottom: 10px; }
+  #main #wrapper .news-animate .title {
+    float: left;
+    padding: 11px 30px 13px;
+    color: #fff;
+    background-color: #1d1d1d;
+    display: inline; }
+    #main #wrapper .news-animate .title h2 {
+      display: inline-block;
+      margin: 0 10px 0 0;
+      font-size: 16px;
+      line-height: 26px;
+      font-weight: 600; }
+  #main #wrapper .news-animate .updatesList {
+    direction: ltr;
+    position: relative;
+    max-height: 50px;
+    padding: 0 12px;
+    color: #999;
+    background-color: #FAFAFA;
+    overflow: hidden;
+    z-index: 0;
+    height: 50px; }
+  #main #wrapper .news-animate .animateWord {
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none; }
+    #main #wrapper .news-animate .animateWord .animate {
+      font-size: 14px;
+      color: #777777;
+      text-decoration-line: none;
+      line-height: 50px; }
+@media only screen and (max-width: 767px) {
+  #main #wrapper .contPadding {
+    margin: 0px;
+    padding: 0px;
+    max-width: 100%; }
+  #main #wrapper .title {
+    width: 100%;
+    display: inline-block;
+    float: none; } }
+#main #wrapper .pageContent {
+  padding-left: 11px;
+  margin-top: 24px;
+  float: left; }
+  #main #wrapper .pageContent li {
+    display: inline-block; }
+    #main #wrapper .pageContent li .btn-link {
+      text-decoration-color: none;
+      text-decoration-line: none;
+      color: #6B5A55;
+      font-size: 14px; }
+    #main #wrapper .pageContent li .info {
+      font-size: 13px; }
+#main #wrapper .leftSection {
+  margin-bottom: 200px; }
+  #main #wrapper .leftSection .LeftContent {
+    padding-top: 0px;
+    padding-bottom: 1px;
+    position: static;
+    transform: none; }
+    #main #wrapper .leftSection .LeftContent .ImgPost {
+      position: relative; }
+      #main #wrapper .leftSection .LeftContent .ImgPost .linkImg img {
+        width: 100%;
+        max-width: 100%;
+        height: auto; }
+      #main #wrapper .leftSection .LeftContent .ImgPost .icon {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 36px;
+        color: #fff;
+        font-size: 16px;
+        line-height: 36px;
+        text-align: center;
+        z-index: 1; }
+        #main #wrapper .leftSection .LeftContent .ImgPost .icon .star {
+          display: inline-block;
+          font: normal normal normal 14px/1 FontAwesome;
+          font-size: inherit;
+          text-rendering: auto;
+          -webkit-font-smoothing: antialiased; }
+      #main #wrapper .leftSection .LeftContent .ImgPost .postMap {
+        cursor: pointer;
+        color: #fff; }
+        #main #wrapper .leftSection .LeftContent .ImgPost .postMap .btnLink {
+          display: inline-block;
+          position: absolute;
+          left: 15px;
+          right: 15px;
+          bottom: 10px;
+          margin-bottom: 0;
+          font-size: 12px;
+          line-height: 22px;
+          z-index: 1; }
+          #main #wrapper .leftSection .LeftContent .ImgPost .postMap .btnLink .googleMap {
+            display: inline-block;
+            margin-right: 10px; }
+    #main #wrapper .leftSection .LeftContent .catsPost .elements {
+      margin: 18px -5px 11px;
+      color: #999;
+      line-height: 0; }
+      #main #wrapper .leftSection .LeftContent .catsPost .elements li {
+        display: inline-block;
+        margin: 10px 5px 0;
+        vertical-align: middle; }
+        #main #wrapper .leftSection .LeftContent .catsPost .elements li .opFolder {
+          color: #777;
+          font-size: 16px; }
+        #main #wrapper .leftSection .LeftContent .catsPost .elements li a {
+          padding: 2px 9px;
+          border: 1px solid #999;
+          font-size: 12px;
+          line-height: 20px;
+          text-transform: uppercase;
+          color: #999;
+          text-decoration-line: none; }
+    #main #wrapper .leftSection .LeftContent .infoPost .static {
+      color: #999;
+      font-size: 13px; }
+      #main #wrapper .leftSection .LeftContent .infoPost .static li {
+        display: inline-block;
+        margin: 0 7.5px; }
+      #main #wrapper .leftSection .LeftContent .infoPost .static li a {
+        font-size: 13px;
+        color: #6B5A55;
+        text-decoration-line: none; }
+    #main #wrapper .leftSection .LeftContent .infoPost .title .h4 {
+      font-size: 34px;
+      line-height: 46px; }
+    #main #wrapper .leftSection .LeftContent .ContentPost {
+      width: 100%; }
+      #main #wrapper .leftSection .LeftContent .ContentPost .info {
+        font-size: 13px;
+        color: #6B5A55;
+        line-height: 22px; }
+      #main #wrapper .leftSection .LeftContent .ContentPost .title {
+        color: #222;
+        font-weight: 600;
+        font-size: 18px; }
+      #main #wrapper .leftSection .LeftContent .ContentPost .colPadding {
+        padding-right: 0px; }
+      #main #wrapper .leftSection .LeftContent .ContentPost .list {
+        padding-left: 0px;
+        list-style: none;
+        font-size: 16px; }
+        #main #wrapper .leftSection .LeftContent .ContentPost .list li {
+          padding-right: 0px;
+          font-size: 16px;
+          color: #6B5A55;
+          margin-bottom: 9px; }
+        #main #wrapper .leftSection .LeftContent .ContentPost .list li:before {
+          content: "\f105";
+          margin-right: 8px;
+          font-family: "FontAwesome"; }
+      #main #wrapper .leftSection .LeftContent .ContentPost img {
+        max-width: 100%;
+        height: auto; }
+      #main #wrapper .leftSection .LeftContent .ContentPost .imgText {
+        float: right;
+        margin-bottom: 10px;
+        font-size: 13px;
+        color: #6B5A55;
+        margin-top: 3px; }
+      #main #wrapper .leftSection .LeftContent .ContentPost .italicFont:before {
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 4px;
+        background-color: #f2f3f5; }
+      #main #wrapper .leftSection .LeftContent .ContentPost .italicFont {
+        min-height: 140px;
+        position: relative;
+        margin-left: 30px;
+        margin-right: 30px;
+        padding-left: 34px;
+        padding-right: 34px;
+        color: #999;
+        font-style: italic;
+        border-left-width: 0; }
+      #main #wrapper .leftSection .LeftContent .ContentPost .user {
+        margin-left: 60px;
+        margin-top: -6%;
+        position: relative;
+        padding-bottom: 6px;
+        color: #222;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 26px; }
+      @media only screen and (max-width: 550px) {
+        #main #wrapper .leftSection .LeftContent .ContentPost .user {
+          margin-top: 5% !important; } }
+      #main #wrapper .leftSection .LeftContent .ContentPost .title2 {
+        color: #222222;
+        font-weight: 600;
+        font-size: 18px; }
+    #main #wrapper .leftSection .LeftContent .tagsPost {
+      margin-top: 110px; }
+      #main #wrapper .leftSection .LeftContent .tagsPost .items {
+        margin: 18px -5px 11px;
+        color: #6B5A55; }
+        #main #wrapper .leftSection .LeftContent .tagsPost .items li {
+          display: inline-block;
+          vertical-align: middle;
+          margin: 10px 5px 0px; }
+          #main #wrapper .leftSection .LeftContent .tagsPost .items li a {
+            font-size: 12px;
+            line-height: 20px;
+            text-transform: uppercase;
+            padding: 0px 9px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #999999;
+            border-image: initial;
+            padding: 2px 6px;
+            color: #6B5A55;
+            text-decoration-line: none; }
+    #main #wrapper .leftSection .LeftContent .sosialPost {
+      margin-top: 18px; }
+      #main #wrapper .leftSection .LeftContent .sosialPost .title {
+        display: inline-block;
+        vertical-align: middle;
+        color: #777B7B; }
+      #main #wrapper .leftSection .LeftContent .sosialPost .items {
+        display: inline-block;
+        vertical-align: middle; }
+        #main #wrapper .leftSection .LeftContent .sosialPost .items li {
+          margin: 5px 5px 0;
+          border: 1px solid;
+          text-align: center; }
+          #main #wrapper .leftSection .LeftContent .sosialPost .items li a i {
+            min-width: 36px;
+            padding: 3px 8px;
+            font-size: 14px;
+            line-height: 24px; }
+        #main #wrapper .leftSection .LeftContent .sosialPost .items .bord1 {
+          border-color: #3B5998; }
+          #main #wrapper .leftSection .LeftContent .sosialPost .items .bord1 .fa-facebook {
+            transition-duration: 0.3s;
+            color: #3B5998; }
+            #main #wrapper .leftSection .LeftContent .sosialPost .items .bord1 .fa-facebook:hover {
+              color: white;
+              background: #3B5998; }
+        #main #wrapper .leftSection .LeftContent .sosialPost .items .bord2 {
+          border-color: #00ACED; }
+          #main #wrapper .leftSection .LeftContent .sosialPost .items .bord2 .fa-twitter {
+            transition-duration: 0.3s;
+            color: #00ACED; }
+            #main #wrapper .leftSection .LeftContent .sosialPost .items .bord2 .fa-twitter:hover {
+              color: white;
+              background: #00ACED; }
+        #main #wrapper .leftSection .LeftContent .sosialPost .items .bord3 {
+          border-color: #D34836; }
+          #main #wrapper .leftSection .LeftContent .sosialPost .items .bord3 .fa-google-plus {
+            transition-duration: 0.3s;
+            color: #D34836; }
+            #main #wrapper .leftSection .LeftContent .sosialPost .items .bord3 .fa-google-plus:hover {
+              color: white;
+              background: #D34836; }
+        #main #wrapper .leftSection .LeftContent .sosialPost .items .bord4 {
+          border-color: #0077B5; }
+          #main #wrapper .leftSection .LeftContent .sosialPost .items .bord4 .fa-linkedin {
+            transition-duration: 0.3s;
+            color: #0077B5; }
+            #main #wrapper .leftSection .LeftContent .sosialPost .items .bord4 .fa-linkedin:hover {
+              color: white;
+              background: #0077B5; }
+        #main #wrapper .leftSection .LeftContent .sosialPost .items .bord5 {
+          border-color: #FF6600; }
+          #main #wrapper .leftSection .LeftContent .sosialPost .items .bord5 .fa-rss {
+            transition-duration: 0.3s;
+            color: #FF6600; }
+            #main #wrapper .leftSection .LeftContent .sosialPost .items .bord5 .fa-rss:hover {
+              color: white;
+              background: #FF6600; }
+        #main #wrapper .leftSection .LeftContent .sosialPost .items .bord6 {
+          border-color: #BB0000; }
+          #main #wrapper .leftSection .LeftContent .sosialPost .items .bord6 .fa-youtube-play {
+            transition-duration: 0.3s;
+            color: #BB0000; }
+            #main #wrapper .leftSection .LeftContent .sosialPost .items .bord6 .fa-youtube-play:hover {
+              color: white;
+              background: #BB0000; }
+    #main #wrapper .leftSection .LeftContent .postAuthorInfo {
+      padding-right: 20px;
+      position: relative;
+      min-height: 200px;
+      margin: 40px 0;
+      border: 1px solid #eee; }
+      #main #wrapper .leftSection .LeftContent .postAuthorInfo .img {
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        bottom: -1px;
+        padding: 30px 20px;
+        color: #222;
+        background-color: #f2f3f5;
+        font-size: 13px; }
+        #main #wrapper .leftSection .LeftContent .postAuthorInfo .img a {
+          text-decoration-line: none !important; }
+        #main #wrapper .leftSection .LeftContent .postAuthorInfo .img .box img {
+          width: 100%; }
+        #main #wrapper .leftSection .LeftContent .postAuthorInfo .img .name {
+          margin-top: 7px;
+          color: #777; }
+      #main #wrapper .leftSection .LeftContent .postAuthorInfo .info .title {
+        font-size: 18px;
+        margin-left: 175px;
+        margin-top: 24px; }
+      #main #wrapper .leftSection .LeftContent .postAuthorInfo .info .content {
+        margin-top: 18px;
+        color: #777;
+        font-family: "Source Sans Pro",sans-serif;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 400;
+        word-wrap: break-word;
+        margin-left: 175px; }
+      #main #wrapper .leftSection .LeftContent .postAuthorInfo .info .social {
+        margin: 9px -8px 0;
+        color: #999;
+        margin-left: 175px; }
+        #main #wrapper .leftSection .LeftContent .postAuthorInfo .info .social li {
+          margin: 6px; }
+          #main #wrapper .leftSection .LeftContent .postAuthorInfo .info .social li a {
+            color: #999999; }
+@media only screen and (max-width: 991px) {
+  #main #wrapper .rightSection {
+    display: none; }
+  #main #wrapper .leftSection {
+    padding: 0px; } }
+#main #wrapper .rightSection .content-inner-right {
+  background: red;
+  height: 2000px; }
+
+/*# sourceMappingURL=style.css.map */
