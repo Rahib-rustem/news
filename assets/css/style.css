@@ -129,7 +129,7 @@ body {
     #main .header .formBox {
       position: relative;
       width: 85px; }
-      #main .header .formBox .input {
+      #main .header .formBox .iinput {
         opacity: 0;
         top: -3px;
         width: 0px;
@@ -297,7 +297,7 @@ body {
     #main #wrapper .pageContent li .info {
       font-size: 13px; }
 #main #wrapper .leftSection {
-  margin-bottom: 200px; }
+  margin-bottom: 65px; }
   #main #wrapper .leftSection .LeftContent {
     padding-top: 0px;
     padding-bottom: 1px;
@@ -764,14 +764,427 @@ body {
           font-size: 13px;
           color: #999999;
           line-height: 25px; }
+    #main #wrapper .leftSection .LeftContent .formPost {
+      margin-top: 38px; }
+      #main #wrapper .leftSection .LeftContent .formPost .postTitle {
+        width: 100%;
+        border-top: 2px solid; }
+        #main #wrapper .leftSection .LeftContent .formPost .postTitle .h4 {
+          position: relative;
+          margin: 0;
+          font-size: 16px;
+          line-height: 40px;
+          font-weight: 600;
+          display: inline; }
+        #main #wrapper .leftSection .LeftContent .formPost .postTitle .icon {
+          float: right;
+          line-height: 40px;
+          color: #999999; }
+      #main #wrapper .leftSection .LeftContent .formPost .box {
+        margin-top: 5px;
+        background: #F2F3F5;
+        padding: 30px; }
+        #main #wrapper .leftSection .LeftContent .formPost .box p {
+          color: #222;
+          font-weight: 600;
+          font-size: 13px; }
+        #main #wrapper .leftSection .LeftContent .formPost .box span {
+          font-size: 13px;
+          color: #9F778B; }
+        #main #wrapper .leftSection .LeftContent .formPost .box .form-control {
+          background: #F2F3F5;
+          width: 100%;
+          padding: .375rem 5.75rem; }
+        #main #wrapper .leftSection .LeftContent .formPost .box .txtArea {
+          min-height: 185px; }
+        #main #wrapper .leftSection .LeftContent .formPost .box .btn {
+          padding: 2px 15px;
+          border-radius: 0;
+          font-size: 14px;
+          line-height: 24px;
+          font-weight: 600;
+          margin-top: 16px;
+          transition-duration: 0.4s;
+          color: white; }
+          #main #wrapper .leftSection .LeftContent .formPost .box .btn:hover {
+            background: #000000; }
 @media screen and (max-width: 991px) {
   #main #wrapper .rightSection {
-    display: none !important; }
+    padding-left: 0px;
+    padding-right: 0px; }
   #main #wrapper .leftSection {
     padding: 0px; } }
-#main #wrapper .rightSection .contentRight {
-  background: red;
-  width: 100%;
-  height: 3200px; }
+@media screen and (max-width: 991px) and (min-width: 767px) {
+  #main #wrapper .rightSection {
+    padding-left: 20px; } }
+#main #wrapper .rightSection {
+  margin-bottom: 400px;
+  width: 100%; }
+  #main #wrapper .rightSection .contentRight .widget .adWidget {
+    background: #F8F8F8;
+    width: 100%;
+    height: 45px; }
+  #main #wrapper .rightSection .contentRight .sosialLIfe {
+    width: 100%;
+    margin-top: 60px; }
+    #main #wrapper .rightSection .contentRight .sosialLIfe .title {
+      position: relative;
+      padding: 12px 24px 13px 0;
+      border-top: 2px solid; }
+      #main #wrapper .rightSection .contentRight .sosialLIfe .title .h4 {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 600; }
+      #main #wrapper .rightSection .contentRight .sosialLIfe .title .icon {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-top: -13px;
+        color: #999;
+        font-size: 16px;
+        line-height: 26px; }
+    #main #wrapper .rightSection .contentRight .sosialLIfe .socialsContent {
+      padding: 5px 0;
+      background-color: #f8f8f8;
+      line-height: 0; }
+      #main #wrapper .rightSection .contentRight .sosialLIfe .socialsContent .box {
+        width: 33.3333%; }
+        #main #wrapper .rightSection .contentRight .sosialLIfe .socialsContent .box a {
+          text-decoration-line: none;
+          position: relative;
+          padding: 15px 15px 8px;
+          font-weight: 600;
+          text-align: center;
+          display: grid; }
+          #main #wrapper .rightSection .contentRight .sosialLIfe .socialsContent .box a .icon {
+            width: 50px;
+            height: 50px;
+            margin: 0 auto;
+            border: 1px solid;
+            border-radius: 50%;
+            font-size: 24px;
+            line-height: 48px;
+            transition-duration: 0.4s; }
+          #main #wrapper .rightSection .contentRight .sosialLIfe .socialsContent .box a .scount {
+            margin-top: 6px;
+            color: #222;
+            line-height: 28px;
+            color: black; }
+          #main #wrapper .rightSection .contentRight .sosialLIfe .socialsContent .box a .stitle {
+            color: #999;
+            font-size: 14px;
+            line-height: 24px; }
+      #main #wrapper .rightSection .contentRight .sosialLIfe .socialsContent .facebook a .icon {
+        border: 1px solid #3B599B;
+        color: #3B599B; }
+      #main #wrapper .rightSection .contentRight .sosialLIfe .socialsContent .facebook:hover .icon {
+        background: #3B599B;
+        color: white; }
+      #main #wrapper .rightSection .contentRight .sosialLIfe .socialsContent .twitter a .icon {
+        border: 1px solid #00ACED;
+        color: #00ACED; }
+      #main #wrapper .rightSection .contentRight .sosialLIfe .socialsContent .twitter:hover .icon {
+        background: #00ACED;
+        color: white; }
+      #main #wrapper .rightSection .contentRight .sosialLIfe .socialsContent .google a .icon {
+        border: 1px solid #D34836;
+        color: #D34836; }
+      #main #wrapper .rightSection .contentRight .sosialLIfe .socialsContent .google:hover .icon {
+        background: #D34836;
+        color: white; }
+      #main #wrapper .rightSection .contentRight .sosialLIfe .socialsContent .rss a .icon {
+        border: 1px solid #FF6600;
+        color: #FF6600; }
+      #main #wrapper .rightSection .contentRight .sosialLIfe .socialsContent .rss:hover .icon {
+        background: #FF6600;
+        color: white; }
+      #main #wrapper .rightSection .contentRight .sosialLIfe .socialsContent .vimeo a .icon {
+        border: 1px solid #4EBBFF;
+        color: #4EBBFF; }
+      #main #wrapper .rightSection .contentRight .sosialLIfe .socialsContent .vimeo:hover .icon {
+        background: #4EBBFF;
+        color: white; }
+      #main #wrapper .rightSection .contentRight .sosialLIfe .socialsContent .youtube a .icon {
+        border: 1px solid #BB0000;
+        color: #BB0000; }
+      #main #wrapper .rightSection .contentRight .sosialLIfe .socialsContent .youtube:hover .icon {
+        background: #BB0000;
+        color: white; }
+      #main #wrapper .rightSection .contentRight .sosialLIfe .socialsContent .box a:before {
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        max-height: 50px;
+        border-right: 1px solid #eee; }
+      #main #wrapper .rightSection .contentRight .sosialLIfe .socialsContent .box:nth-child(1) > a:before,
+      #main #wrapper .rightSection .contentRight .sosialLIfe .socialsContent .box:nth-child(2) > a:before,
+      #main #wrapper .rightSection .contentRight .sosialLIfe .socialsContent .box:nth-child(3) > a:before {
+        top: auto;
+        bottom: 0; }
+      #main #wrapper .rightSection .contentRight .sosialLIfe .socialsContent .box a:after {
+        content: " ";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        border-bottom: 1px solid #eee; }
+      #main #wrapper .rightSection .contentRight .sosialLIfe .socialsContent .box:nth-child(4) > a:after,
+      #main #wrapper .rightSection .contentRight .sosialLIfe .socialsContent .box:nth-child(5) > a:after,
+      #main #wrapper .rightSection .contentRight .sosialLIfe .socialsContent .box:nth-child(6) > a:after {
+        border-bottom: none; }
+  #main #wrapper .rightSection .contentRight .emailPost {
+    margin-top: 60px; }
+    #main #wrapper .rightSection .contentRight .emailPost .postTitle {
+      position: relative;
+      padding: 12px 24px 13px 0;
+      border-top: 2px solid; }
+      #main #wrapper .rightSection .contentRight .emailPost .postTitle .h4 {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 600; }
+      #main #wrapper .rightSection .contentRight .emailPost .postTitle .icon {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-top: -13px;
+        color: #999;
+        font-size: 16px;
+        line-height: 26px; }
+    #main #wrapper .rightSection .contentRight .emailPost .emailContent {
+      padding: 30px 20px;
+      background: #F8F8F8; }
+      #main #wrapper .rightSection .contentRight .emailPost .emailContent .content {
+        font-size: 13px; }
+      #main #wrapper .rightSection .contentRight .emailPost .emailContent .row {
+        padding: 0 14px; }
+      #main #wrapper .rightSection .contentRight .emailPost .emailContent .inputt {
+        height: 40px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        background-color: #eee;
+        border: none;
+        float: left;
+        outline: none;
+        margin-bottom: 0; }
+      #main #wrapper .rightSection .contentRight .emailPost .emailContent .btnn {
+        min-width: 50px;
+        padding: 6px 16px;
+        border-radius: 0px;
+        color: white;
+        outline: none;
+        border: none; }
+  #main #wrapper .rightSection .contentRight .featuredPost {
+    margin-top: 60px; }
+    #main #wrapper .rightSection .contentRight .featuredPost .postTitle {
+      position: relative;
+      padding: 12px 24px 13px 0;
+      border-top: 2px solid; }
+      #main #wrapper .rightSection .contentRight .featuredPost .postTitle .h4 {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 600; }
+      #main #wrapper .rightSection .contentRight .featuredPost .postTitle .icon {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-top: -13px;
+        color: #999;
+        font-size: 16px;
+        line-height: 26px; }
+    #main #wrapper .rightSection .contentRight .featuredPost .featuredContent {
+      background: #F8F8F8; }
+      #main #wrapper .rightSection .contentRight .featuredPost .featuredContent .list {
+        padding: 20px 20px 15px;
+        color: #999; }
+        #main #wrapper .rightSection .contentRight .featuredPost .featuredContent .list .box {
+          width: 100%; }
+          #main #wrapper .rightSection .contentRight .featuredPost .featuredContent .list .box li {
+            border: 1px solid #eee;
+            height: auto; }
+            #main #wrapper .rightSection .contentRight .featuredPost .featuredContent .list .box li .link {
+              padding: 0 15px;
+              line-height: 18px;
+              color: inherit;
+              font-size: 13px;
+              text-decoration-line: none; }
+        @media screen and (max-width: 767px) {
+          #main #wrapper .rightSection .contentRight .featuredPost .featuredContent .list .box {
+            display: block; }
+            #main #wrapper .rightSection .contentRight .featuredPost .featuredContent .list .box li {
+              padding: 6px 0;
+              text-align: center; } }
+    #main #wrapper .rightSection .contentRight .featuredPost .postItems {
+      background: #F8F8F8; }
+      #main #wrapper .rightSection .contentRight .featuredPost .postItems .bord li {
+        padding-left: 20px;
+        padding-right: 20px; }
+        #main #wrapper .rightSection .contentRight .featuredPost .postItems .bord li .postImg {
+          border-top: 1px solid #eee;
+          padding-top: 15px;
+          padding-bottom: 25px; }
+          #main #wrapper .rightSection .contentRight .featuredPost .postItems .bord li .postImg img {
+            float: left;
+            width: 100px;
+            margin-right: 20px; }
+          #main #wrapper .rightSection .contentRight .featuredPost .postItems .bord li .postImg .postInfo {
+            overflow: hidden; }
+            #main #wrapper .rightSection .contentRight .featuredPost .postItems .bord li .postImg .postInfo .meta {
+              margin: 0 -7.5px; }
+              #main #wrapper .rightSection .contentRight .featuredPost .postItems .bord li .postImg .postInfo .meta li {
+                display: inline-block;
+                margin: 0 7.5px;
+                font-size: 13px;
+                padding: 0px; }
+                #main #wrapper .rightSection .contentRight .featuredPost .postItems .bord li .postImg .postInfo .meta li a {
+                  padding: 0;
+                  font-size: 14px;
+                  color: #999;
+                  text-decoration-line: none; }
+            #main #wrapper .rightSection .contentRight .featuredPost .postItems .bord li .postImg .postInfo .title .h4 {
+              line-height: 16px; }
+              #main #wrapper .rightSection .contentRight .featuredPost .postItems .bord li .postImg .postInfo .title .h4 .btn-link {
+                color: #222;
+                margin: 0;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 0px !important;
+                text-decoration-line: none; }
+  #main #wrapper .rightSection .contentRight .advertisementPost {
+    margin-top: 60px; }
+    #main #wrapper .rightSection .contentRight .advertisementPost .postTitle {
+      position: relative;
+      padding: 12px 24px 13px 0;
+      border-top: 2px solid; }
+      #main #wrapper .rightSection .contentRight .advertisementPost .postTitle .h4 {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 600; }
+      #main #wrapper .rightSection .contentRight .advertisementPost .postTitle .icon {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-top: -13px;
+        color: #999;
+        font-size: 16px;
+        line-height: 26px; }
+    #main #wrapper .rightSection .contentRight .advertisementPost .addContent {
+      padding: 30px 30px 15px;
+      background-color: #f8f8f8; }
+  #main #wrapper .rightSection .contentRight .postStatic {
+    margin-top: 60px; }
+    #main #wrapper .rightSection .contentRight .postStatic .postTitle {
+      position: relative;
+      padding: 12px 24px 13px 0;
+      border-top: 2px solid; }
+      #main #wrapper .rightSection .contentRight .postStatic .postTitle .h4 {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 600; }
+      #main #wrapper .rightSection .contentRight .postStatic .postTitle .pageBtn {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-top: -13px;
+        color: #999;
+        font-size: 16px;
+        line-height: 26px; }
+        #main #wrapper .rightSection .contentRight .postStatic .postTitle .pageBtn a {
+          color: #999; }
+    #main #wrapper .rightSection .contentRight .postStatic .postContent {
+      padding: 14px 20px 20px;
+      background: #F8F8F8; }
+      #main #wrapper .rightSection .contentRight .postStatic .postContent .box {
+        border-top: 1px solid #F1F1F1;
+        padding-top: 14px; }
+        #main #wrapper .rightSection .contentRight .postStatic .postContent .box .activv {
+          display: block;
+          font-size: 13px;
+          padding-bottom: 15px; }
+          #main #wrapper .rightSection .contentRight .postStatic .postContent .box .activv .input {
+            margin-right: 8px; }
+        #main #wrapper .rightSection .contentRight .postStatic .postContent .box .btn {
+          margin-top: 13px;
+          padding: 2px 15px;
+          border-radius: 0;
+          font-size: 14px;
+          line-height: 24px;
+          font-weight: 600;
+          color: white; }
+      #main #wrapper .rightSection .contentRight .postStatic .postContent .indicator {
+        display: flex;
+        font-size: 12px;
+        padding-bottom: 27px; }
+        #main #wrapper .rightSection .contentRight .postStatic .postContent .indicator #progress {
+          margin-right: 4px;
+          height: 13px;
+          width: 100%;
+          background-color: #F8F8F8;
+          border: 0.5px solid #CCCCCC; }
+          #main #wrapper .rightSection .contentRight .postStatic .postContent .indicator #progress #bar {
+            width: 65%;
+            height: 12px;
+            background-color: red; }
+        #main #wrapper .rightSection .contentRight .postStatic .postContent .indicator #progress2 {
+          margin-right: 4px;
+          height: 13px;
+          width: 100%;
+          background-color: #F8F8F8;
+          border: 0.5px solid #CCCCCC; }
+          #main #wrapper .rightSection .contentRight .postStatic .postContent .indicator #progress2 #bar2 {
+            width: 28%;
+            height: 12px;
+            background-color: red; }
+        #main #wrapper .rightSection .contentRight .postStatic .postContent .indicator #progress3 {
+          margin-right: 4px;
+          height: 13px;
+          width: 100%;
+          background-color: #F8F8F8;
+          border: 0.5px solid #CCCCCC; }
+          #main #wrapper .rightSection .contentRight .postStatic .postContent .indicator #progress3 #bar3 {
+            width: 07%;
+            height: 12px;
+            background-color: red; }
+        #main #wrapper .rightSection .contentRight .postStatic .postContent .indicator span {
+          margin-top: -3px; }
+  #main #wrapper .rightSection .contentRight .postImage {
+    margin-top: 60px;
+    background: #F8F8F8; }
+    #main #wrapper .rightSection .contentRight .postImage .imgContent {
+      padding: 20px 20px 15px;
+      background-color: #f8f8f8;
+      text-align: center; }
+      #main #wrapper .rightSection .contentRight .postImage .imgContent img {
+        max-width: 100%;
+        height: auto; }
+      #main #wrapper .rightSection .contentRight .postImage .imgContent .leftSide,
+      #main #wrapper .rightSection .contentRight .postImage .imgContent .rightSide {
+        padding-bottom: 5px; }
+  #main #wrapper .rightSection .contentRight .readersOpinion {
+    margin-top: 60px; }
+    #main #wrapper .rightSection .contentRight .readersOpinion .postTitle {
+      position: relative;
+      padding: 12px 24px 13px 0;
+      border-top: 2px solid; }
+      #main #wrapper .rightSection .contentRight .readersOpinion .postTitle .h4 {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 600; }
+      #main #wrapper .rightSection .contentRight .readersOpinion .postTitle .postControl {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-top: -13px;
+        color: #999; }
+        #main #wrapper .rightSection .contentRight .readersOpinion .postTitle .postControl a {
+          color: #999; }
+    #main #wrapper .rightSection .contentRight .readersOpinion .readerContent {
+      background: #F8F8F8; }
+      #main #wrapper .rightSection .contentRight .readersOpinion .readerContent .contentBox {
+        padding-top: 20px;
+        padding-bottom: 20px; }
 
 /*# sourceMappingURL=style.css.map */

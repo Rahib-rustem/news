@@ -8,14 +8,14 @@ $(document).ready(function(){
         $('.drop').css({'display':'none'});
 });
 $( ".search").click(function() {
-    $( ".input").focus();
+    $( ".iinput").focus();
     $('.search').css({'color':'#999999'})
-    $('.input').css({
+    $('.iinput').css({
         'opacity':'1',
         'width': '215px',
     });
 });  
-$( ".input" ).blur(function() {
+$( ".iinput" ).blur(function() {
     $('.search').css({'color':'white'})
     $(this).css({
         'opacity':'0',
