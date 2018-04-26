@@ -4,8 +4,7 @@ body {
   overflow-x: hidden; }
 
 #main {
-  width: 100%;
-  min-height: 400px; }
+  width: 100%; }
   #main .headerSosial {
     width: 100%;
     min-height: 50px;
@@ -225,9 +224,12 @@ body {
     #main .centerStyle {
       display: none; } }
 
+@media screen and (max-width: 1199px) {
+  #main .responMaxWidth {
+    max-width: 97% !important; } }
 @media only screen and (max-width: 767px) {
   #main #wrapper {
-    padding: 0 13px; } }
+    padding: 0 5px; } }
 @-webkit-keyframes marqueeAnimation-54766530 {
   100% {
     margin-left: -1704.34px; } }
@@ -814,11 +816,7 @@ body {
     padding-right: 0px; }
   #main #wrapper .leftSection {
     padding: 0px; } }
-@media screen and (max-width: 991px) and (min-width: 767px) {
-  #main #wrapper .rightSection {
-    padding-left: 20px; } }
 #main #wrapper .rightSection {
-  margin-bottom: 400px;
   width: 100%; }
   #main #wrapper .rightSection .contentRight .widget .adWidget {
     background: #F8F8F8;
@@ -1184,7 +1182,175 @@ body {
     #main #wrapper .rightSection .contentRight .readersOpinion .readerContent {
       background: #F8F8F8; }
       #main #wrapper .rightSection .contentRight .readersOpinion .readerContent .contentBox {
-        padding-top: 20px;
-        padding-bottom: 20px; }
+        border-top: 1px solid #eee;
+        padding-top: 15px;
+        padding-bottom: 15px; }
+        #main #wrapper .rightSection .contentRight .readersOpinion .readerContent .contentBox li {
+          padding-left: 20px;
+          padding-right: 20px; }
+        #main #wrapper .rightSection .contentRight .readersOpinion .readerContent .contentBox .postImg .imageBox {
+          float: left;
+          margin-right: 17px; }
+          #main #wrapper .rightSection .contentRight .readersOpinion .readerContent .contentBox .postImg .imageBox img {
+            max-width: 100%;
+            height: auto; }
+        #main #wrapper .rightSection .contentRight .readersOpinion .readerContent .contentBox .postImg .postInfo {
+          overflow: hidden; }
+          #main #wrapper .rightSection .contentRight .readersOpinion .readerContent .contentBox .postImg .postInfo .title {
+            display: flex;
+            flex-wrap: nowrap; }
+            #main #wrapper .rightSection .contentRight .readersOpinion .readerContent .contentBox .postImg .postInfo .title .h4 {
+              font-size: 14px;
+              line-height: 20px;
+              font-weight: 600;
+              color: #222222;
+              width: 100%; }
+          #main #wrapper .rightSection .contentRight .readersOpinion .readerContent .contentBox .postImg .postInfo .meta {
+            margin-top: -7px; }
+            #main #wrapper .rightSection .contentRight .readersOpinion .readerContent .contentBox .postImg .postInfo .meta li {
+              padding: 0; }
+              #main #wrapper .rightSection .contentRight .readersOpinion .readerContent .contentBox .postImg .postInfo .meta li span {
+                display: inline-block;
+                font-size: 13px;
+                padding-right: 16px;
+                color: #999999; }
+      #main #wrapper .rightSection .contentRight .readersOpinion .readerContent .contentBox:nth-child(1) {
+        border: none; }
+  #main #wrapper .rightSection .contentRight .readersOpinion2 {
+    margin-top: 60px; }
+    #main #wrapper .rightSection .contentRight .readersOpinion2 .postTitle {
+      position: relative;
+      padding: 12px 24px 13px 0;
+      border-top: 2px solid; }
+      #main #wrapper .rightSection .contentRight .readersOpinion2 .postTitle .h4 {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 600; }
+      #main #wrapper .rightSection .contentRight .readersOpinion2 .postTitle .postControl {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-top: -13px;
+        color: #999; }
+        #main #wrapper .rightSection .contentRight .readersOpinion2 .postTitle .postControl a {
+          color: #999; }
+    #main #wrapper .rightSection .contentRight .readersOpinion2 .readerContent {
+      background: #F8F8F8; }
+      #main #wrapper .rightSection .contentRight .readersOpinion2 .readerContent .contentBox {
+        border-top: 1px solid #eee;
+        padding-top: 15px;
+        padding-bottom: 15px; }
+        #main #wrapper .rightSection .contentRight .readersOpinion2 .readerContent .contentBox li {
+          padding-left: 20px;
+          padding-right: 20px; }
+        #main #wrapper .rightSection .contentRight .readersOpinion2 .readerContent .contentBox .postImg .imageBox {
+          float: left;
+          border: 2px solid #999999;
+          border-radius: 50%;
+          margin-right: 17px; }
+          #main #wrapper .rightSection .contentRight .readersOpinion2 .readerContent .contentBox .postImg .imageBox img {
+            max-width: 100%;
+            height: auto; }
+        #main #wrapper .rightSection .contentRight .readersOpinion2 .readerContent .contentBox .postImg .postInfo {
+          overflow: hidden; }
+          #main #wrapper .rightSection .contentRight .readersOpinion2 .readerContent .contentBox .postImg .postInfo .title {
+            display: flex;
+            flex-wrap: nowrap; }
+            #main #wrapper .rightSection .contentRight .readersOpinion2 .readerContent .contentBox .postImg .postInfo .title .h4::before {
+              content: "\f10d";
+              margin-left: 1px;
+              margin-right: 9px;
+              color: #999;
+              font-family: "FontAwesome";
+              font-size: 13px; }
+            #main #wrapper .rightSection .contentRight .readersOpinion2 .readerContent .contentBox .postImg .postInfo .title .h4 {
+              font-size: 14px;
+              line-height: 20px;
+              font-weight: 600;
+              color: #222222; }
+          #main #wrapper .rightSection .contentRight .readersOpinion2 .readerContent .contentBox .postImg .postInfo .meta {
+            margin-top: -7px; }
+            #main #wrapper .rightSection .contentRight .readersOpinion2 .readerContent .contentBox .postImg .postInfo .meta li {
+              padding: 0; }
+              #main #wrapper .rightSection .contentRight .readersOpinion2 .readerContent .contentBox .postImg .postInfo .meta li span {
+                display: inline-block;
+                font-size: 13px;
+                padding-right: 16px;
+                color: #999999; }
+      #main #wrapper .rightSection .contentRight .readersOpinion2 .readerContent .contentBox:nth-child(1) {
+        border: none; }
+
+footer {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 60px;
+  width: 100%;
+  background: #1D1D1D; }
+  footer .footerContainer {
+    padding: 0px;
+    margin-top: 15px;
+    padding-top: 60px; }
+    footer .footerContainer .col-lg-3 {
+      min-height: 200px; }
+    footer .footerContainer .box {
+      border-top: 2px solid white; }
+      footer .footerContainer .box .title {
+        position: relative;
+        padding: 12px 24px 13px 0; }
+        footer .footerContainer .box .title .h4 {
+          position: relative;
+          margin: 0;
+          font-size: 16px;
+          line-height: 26px;
+          font-weight: 600;
+          color: white; }
+        footer .footerContainer .box .title .icon {
+          position: absolute;
+          top: 50%;
+          right: 0;
+          margin-top: -13px;
+          color: #999;
+          font-size: 16px;
+          line-height: 26px; }
+      footer .footerContainer .box .about .content {
+        color: #777;
+        font-size: 13px;
+        line-height: 26px; }
+      footer .footerContainer .box .about .action {
+        border-bottom: 1px solid #333333;
+        margin-top: 16px;
+        padding-bottom: 11px; }
+        footer .footerContainer .box .about .action a {
+          color: #777;
+          font-size: 14px;
+          text-decoration: none; }
+      footer .footerContainer .box .about .sosialBox {
+        margin-top: 8px;
+        padding-top: 11px; }
+        footer .footerContainer .box .about .sosialBox li {
+          margin-top: 10px;
+          width: 100%; }
+        footer .footerContainer .box .about .sosialBox .sosial {
+          color: white;
+          margin-right: 8px; }
+        footer .footerContainer .box .about .sosialBox span {
+          color: #777;
+          font-size: 13px; }
+        footer .footerContainer .box .about .sosialBox a {
+          color: #777;
+          font-size: 14px; }
+    footer .footerContainer .box2 ul {
+      padding: 0px; }
+      footer .footerContainer .box2 ul li {
+        color: #777;
+        width: 100%;
+        margin-top: 14px;
+        border-bottom: 1px solid #333333;
+        padding-bottom: 5px;
+        font-size: 14px;
+        cursor: pointer; }
+        footer .footerContainer .box2 ul li span {
+          margin-left: 5px;
+          font-size: 14px; }
 
 /*# sourceMappingURL=style.css.map */

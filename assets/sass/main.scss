@@ -1,9 +1,25 @@
 
+// @media screen and (max-width: 991px and min-width 766px) {
+//     #wrapper{
+//       padding: 0 30px!important;
+       
+//     }
+  
+// }
 #main{
-   
+    // padding-left: 13px;
+    @media screen and (max-width: 1199px) {
+        .responMaxWidth{
+           max-width: 97%!important;
+           
+        }
+      
+    }
+
+  
     @media only screen and (max-width: 767px) {
         #wrapper{
-            padding: 0 13px;
+            padding: 0 5px;
         }
       
     }
@@ -854,7 +870,9 @@
 
 
 }  // left section
- 
+
+   
+
 
 @media  screen and (max-width: 991px) {
     .rightSection{
@@ -870,13 +888,13 @@
 
 @media  screen and (max-width: 991px)  and (min-width: 767px){
     .rightSection{
-        padding-left: 20px;
+        // padding-left: 20px;
     }
 }
 // rightSection >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 .rightSection{
-    margin-bottom: 400px;
+   
     width: 100%;
     .contentRight{
         .widget .adWidget{
@@ -1176,40 +1194,38 @@
             background: #F8F8F8;
             .bord{
               
-                    li{
-                        // border-top: 1px solid #eee;
-                     
-                        padding-left: 20px;
-                        padding-right: 20px;
-                            .postImg{
-                                border-top: 1px solid #eee;
-                                padding-top: 15px;
-                                padding-bottom: 25px;
-                                img{
-                                    float: left;
-                                    width: 100px;
-                                    margin-right: 20px;
-                                }
-                                .postInfo{
-                                    overflow: hidden;
-                                    .meta{
-                                        // margin-top: -7px;
-                                        margin: 0 -7.5px;
-                                      
-                                        
-                                        li {
-                                            display: inline-block;
-                                            margin: 0 7.5px;
-                                            font-size: 13px;
-                                            padding: 0px;
-                                               a{
-                                                padding: 0;
-                                                font-size: 14px;
-                                                color: #999;
-                                                text-decoration-line: none;
-                                               
-                                               }
-                                        }
+    li{
+        
+        padding-left: 20px;
+        padding-right: 20px;
+            .postImg{
+                border-top: 1px solid #eee;
+                padding-top: 15px;
+                padding-bottom: 25px;
+                img{
+                    float: left;
+                    width: 100px;
+                    margin-right: 20px;
+                }
+            .postInfo{
+                overflow: hidden;
+                .meta{
+                    margin: 0 -7.5px;
+                    
+                    
+                    li {
+                        display: inline-block;
+                        margin: 0 7.5px;
+                        font-size: 13px;
+                        padding: 0px;
+                            a{
+                            padding: 0;
+                            font-size: 14px;
+                            color: #999;
+                            text-decoration-line: none;
+                            
+                            }
+                            }
                                     }
                                 .title{
                                     .h4{
@@ -1409,12 +1425,159 @@
     .readerContent{
         background: #F8F8F8;
     .contentBox{
-        padding-top: 20px;
-        padding-bottom: 20px;
+        border-top: 1px solid #eee;
+        li{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        padding-top: 15px;
+        padding-bottom: 15px;
+       
+        .postImg{
+         
+            .imageBox{
+                float: left;
+                margin-right: 17px;
+              
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+        }
+            .postInfo{
+              overflow: hidden;
+            
+                .title{
+                 display: flex;
+                flex-wrap: nowrap;
+                .h4{
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 600;
+                    color: #222222;
+                    width: 100%;
+                }
+
+                    
+                }
+                .meta{
+                    margin-top: -7px;
+                    li{
+                        padding: 0;
+                    span{
+                        display: inline-block;
+                        font-size: 13px;
+                        padding-right: 16px;
+                        color: #999999;
+                    }
+                }
+            }
+            }
+        }
+       
     }
+    .contentBox:nth-child(1){border: none;}
 }
 }
 
+//.>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+
+.readersOpinion2{
+    margin-top: 60px;
+    .postTitle{
+        position: relative;
+        padding: 12px 24px 13px 0;
+        border-top: 2px solid;
+        .h4{
+            font-size: 16px;
+            line-height: 26px;
+            font-weight: 600;
+        }
+        .postControl{
+            position: absolute;
+            top: 50%;
+            right: 0;
+            margin-top: -13px;
+            color: #999;
+                a{
+                    color: #999;
+                }
+        }
+    }
+    .readerContent{
+        background: #F8F8F8;
+    .contentBox{
+        border-top: 1px solid #eee;
+        li{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        padding-top: 15px;
+        padding-bottom: 15px;
+       
+        .postImg{
+          
+            .imageBox{
+                float: left;
+                border: 2px solid #999999;
+                border-radius: 50%;
+                margin-right: 17px;
+              
+            img{
+                max-width: 100%;
+                height: auto;
+             
+            }
+        }
+            .postInfo{
+              overflow: hidden;
+             
+                .title{
+                    display: flex;
+                    flex-wrap: nowrap;
+                .h4::before{
+                    content: "\f10d";
+                    margin-left: 1px;
+                    margin-right: 9px;
+                    color: #999;
+                    font-family: "FontAwesome";
+                    font-size: 13px;
+                }
+                .h4{
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: 600;
+                    color: #222222;
+                 
+                }
+
+                    
+                }
+                .meta{
+                    margin-top: -7px;
+                    li{
+                        padding: 0;
+                    span{
+                        display: inline-block;
+                        font-size: 13px;
+                        padding-right: 16px;
+                        color: #999999;
+                    }
+                }
+            }
+            }
+        }
+       
+    }
+    .contentBox:nth-child(1){border: none;}
+}
+
+
+
+}
 
 
 }//contentRight

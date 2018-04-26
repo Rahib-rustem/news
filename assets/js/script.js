@@ -22,9 +22,9 @@ $( ".iinput" ).blur(function() {
         'width': '0px'
     });
 });  
-
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 $(window).scroll(function(){
-    if ($(window).scrollTop() >= 208) {
+    if ($(window).scrollTop() >= 200) {
        $('.header').css({
            'position':'fixed',
            'top':'0px'
@@ -36,7 +36,12 @@ $(window).scroll(function(){
            'top':'áuto'
        })
     }
+    
 });
+
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>
 $( ".mobileButton" ).click(function() {
     $('.mobileContent').css({'left':'0px'});
 }); 
