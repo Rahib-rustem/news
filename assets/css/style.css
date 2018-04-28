@@ -276,6 +276,8 @@ body {
       color: #777777;
       text-decoration-line: none;
       line-height: 50px; }
+      #main #wrapper .news-animate .animateWord .animate:hover {
+        color: #DA0000; }
 @media only screen and (max-width: 767px) {
   #main #wrapper .contPadding {
     margin: 0px;
@@ -297,7 +299,8 @@ body {
       color: #6B5A55;
       font-size: 14px; }
     #main #wrapper .pageContent li .info {
-      font-size: 13px; }
+      font-size: 13px;
+      color: #DA0000; }
 #main #wrapper .leftSection {
   margin-bottom: 65px; }
   #main #wrapper .leftSection .LeftContent {
@@ -320,7 +323,8 @@ body {
         font-size: 16px;
         line-height: 36px;
         text-align: center;
-        z-index: 1; }
+        z-index: 1;
+        background: #DA0000; }
         #main #wrapper .leftSection .LeftContent .ImgPost .icon .star {
           display: inline-block;
           font: normal normal normal 14px/1 FontAwesome;
@@ -339,7 +343,10 @@ body {
           margin-bottom: 0;
           font-size: 12px;
           line-height: 22px;
-          z-index: 1; }
+          z-index: 1;
+          transition-duration: 0.3s; }
+          #main #wrapper .leftSection .LeftContent .ImgPost .postMap .btnLink:hover {
+            color: #DA0000; }
           #main #wrapper .leftSection .LeftContent .ImgPost .postMap .btnLink .googleMap {
             display: inline-block;
             margin-right: 10px; }
@@ -361,7 +368,12 @@ body {
           line-height: 20px;
           text-transform: uppercase;
           color: #999;
-          text-decoration-line: none; }
+          text-decoration-line: none;
+          transition-duration: 0.3s; }
+          #main #wrapper .leftSection .LeftContent .catsPost .elements li a:hover {
+            background: #DA0000;
+            color: white;
+            border-color: white; }
     #main #wrapper .leftSection .LeftContent .infoPost .static {
       color: #999;
       font-size: 13px; }
@@ -371,8 +383,11 @@ body {
       #main #wrapper .leftSection .LeftContent .infoPost .static li a {
         font-size: 13px;
         color: #6B5A55;
-        text-decoration-line: none; }
-    #main #wrapper .leftSection .LeftContent .infoPost .title .h4 {
+        text-decoration-line: none;
+        transition-duration: 0.2s; }
+        #main #wrapper .leftSection .LeftContent .infoPost .static li a:hover {
+          color: #DA0000; }
+    #main #wrapper .leftSection .LeftContent .infoPost .title .h5 {
       font-size: 34px;
       line-height: 46px; }
     #main #wrapper .leftSection .LeftContent .ContentPost {
@@ -448,22 +463,27 @@ body {
       #main #wrapper .leftSection .LeftContent .tagsPost .items {
         margin: 18px -5px 11px;
         color: #6B5A55; }
+        #main #wrapper .leftSection .LeftContent .tagsPost .items li:nth-child(1) {
+          border: none; }
         #main #wrapper .leftSection .LeftContent .tagsPost .items li {
           display: inline-block;
-          vertical-align: middle;
-          margin: 10px 5px 0px; }
+          margin: 10px 5px 0px;
+          transition-duration: 0.4s;
+          border: 1px solid #807777;
+          height: 22px; }
+          #main #wrapper .leftSection .LeftContent .tagsPost .items li:hover {
+            border-color: white !important;
+            background: #DA0000; }
           #main #wrapper .leftSection .LeftContent .tagsPost .items li a {
             font-size: 12px;
-            line-height: 20px;
-            text-transform: uppercase;
-            padding: 0px 9px;
-            border-width: 1px;
-            border-style: solid;
-            border-color: #999999;
-            border-image: initial;
-            padding: 2px 6px;
-            color: #6B5A55;
-            text-decoration-line: none; }
+            padding: 3px 10px;
+            color: #999999;
+            position: relative;
+            bottom: 3px;
+            text-decoration-line: none;
+            transition-duration: 0.3s; }
+            #main #wrapper .leftSection .LeftContent .tagsPost .items li a:hover {
+              color: white; }
     #main #wrapper .leftSection .LeftContent .sosialPost {
       margin-top: 18px; }
       #main #wrapper .leftSection .LeftContent .sosialPost .title {
@@ -571,7 +591,10 @@ body {
           #main #wrapper .leftSection .LeftContent .postAuthorInfo .info .social li {
             margin: 6px; }
             #main #wrapper .leftSection .LeftContent .postAuthorInfo .info .social li a {
-              color: #999999; }
+              color: #999999;
+              transition-duration: 0.3s; }
+              #main #wrapper .leftSection .LeftContent .postAuthorInfo .info .social li a:hover {
+                color: #DA0000; }
     @media only screen and (max-width: 390px) {
       #main #wrapper .leftSection .LeftContent .postAuthorInfo {
         padding-right: 0px; }
@@ -594,7 +617,11 @@ body {
         line-height: 24px;
         font-weight: 700; }
       #main #wrapper .leftSection .LeftContent .postInfor .colorStyle {
-        color: #999999; }
+        color: #999999;
+        transition-duration: 0.3s;
+        text-decoration: none; }
+        #main #wrapper .leftSection .LeftContent .postInfor .colorStyle:hover {
+          color: #DA0000; }
       #main #wrapper .leftSection .LeftContent .postInfor .rightPost {
         text-align: right; }
         #main #wrapper .leftSection .LeftContent .postInfor .rightPost .info {
@@ -621,14 +648,17 @@ body {
         color: #222222;
         text-decoration-line: none;
         font-size: 14px;
-        font-weight: 700; }
+        font-weight: 700;
+        transition-duration: 0.3s; }
+        #main #wrapper .leftSection .LeftContent .postInfor .rightPost .btn-link:hover, #main #wrapper .leftSection .LeftContent .postInfor .leftPost .btn-link:hover {
+          color: #DA0000; }
     #main #wrapper .leftSection .LeftContent .postRelated {
       padding: 0px;
       position: relative;
       padding-top: 30px; }
       #main #wrapper .leftSection .LeftContent .postRelated .postItemTitle {
         padding: 12px 57px 13px 0;
-        border-top: 2px solid; }
+        border-top: 2px solid  #DA0000; }
         #main #wrapper .leftSection .LeftContent .postRelated .postItemTitle .h4 {
           position: relative;
           margin: 0;
@@ -647,7 +677,11 @@ body {
           position: absolute;
           right: 0; }
           #main #wrapper .leftSection .LeftContent .postRelated .postItemTitle .arrows .btnLink {
+            transition-duration: 0.3s;
+            text-decoration: none;
             color: #999999; }
+            #main #wrapper .leftSection .LeftContent .postRelated .postItemTitle .arrows .btnLink:hover {
+              color: #DA0000; }
       #main #wrapper .leftSection .LeftContent .postRelated .postItem img {
         width: 100%;
         opacity: 0.8 0.5;
@@ -658,30 +692,38 @@ body {
       #main #wrapper .leftSection .LeftContent .postRelated .postItem .cat {
         position: absolute;
         top: 15px;
-        left: 15px;
+        left: 28px;
         padding: 0 10px;
         color: #fff;
         font-size: 12px;
         line-height: 22px;
         text-transform: uppercase;
         z-index: 1;
-        background: #2A2A2A; }
+        background: #2A2A2A;
+        text-decoration: none;
+        transition-duration: 0.3s; }
+        #main #wrapper .leftSection .LeftContent .postRelated .postItem .cat:hover {
+          background: #DA0000; }
       #main #wrapper .leftSection .LeftContent .postRelated .postItem .icon {
         position: absolute;
         top: 15px;
-        right: 15px;
+        right: 28px;
         width: 36px;
         color: #fff;
         font-size: 16px;
         line-height: 36px;
         text-align: center;
-        z-index: 1; }
+        z-index: 1;
+        background: #DA0000;
+        transition-duration: 0.3s !important; }
+        #main #wrapper .leftSection .LeftContent .postRelated .postItem .icon:hover {
+          background: #1B1A1B !important; }
       #main #wrapper .leftSection .LeftContent .postRelated .postItem .postInfo {
         margin-bottom: 8px;
         position: absolute;
         left: 30px;
         right: 15px;
-        bottom: 150px;
+        bottom: 130px;
         color: #fff;
         z-index: 1;
         line-height: 5px; }
@@ -691,16 +733,23 @@ body {
           display: inline-block;
           font-size: 14px;
           color: white;
-          text-decoration-line: none; }
+          text-decoration-line: none;
+          transition-duration: 0.3s; }
+          #main #wrapper .leftSection .LeftContent .postRelated .postItem .postInfo .meta li a:hover {
+            color: #DA0000; }
         #main #wrapper .leftSection .LeftContent .postRelated .postItem .postInfo .title .h4 {
           margin-left: 4px;
           line-height: 15px;
-          font-weight: 600; }
+          font-weight: 600;
+          transition-duration: 0.3s; }
           #main #wrapper .leftSection .LeftContent .postRelated .postItem .postInfo .title .h4 a {
             text-decoration-line: none;
             color: white;
             font-size: 13px;
-            font-weight: 600; }
+            font-weight: 600;
+            transition-duration: 0.3s; }
+            #main #wrapper .leftSection .LeftContent .postRelated .postItem .postInfo .title .h4 a:hover {
+              color: #DA0000; }
       #main #wrapper .leftSection .LeftContent .postRelated .postItem .postContent {
         margin-top: 8px;
         font-size: 13px;
@@ -708,13 +757,17 @@ body {
         color: #999999; }
       #main #wrapper .leftSection .LeftContent .postRelated .postItem .postReading a {
         color: #222;
-        font-size: 13px; }
+        font-size: 13px;
+        text-decoration: none;
+        transition-duration: 0.3s; }
+        #main #wrapper .leftSection .LeftContent .postRelated .postItem .postReading a:hover {
+          color: #DA0000; }
     #main #wrapper .leftSection .LeftContent .commentPost {
       position: relative;
       padding-top: 60px; }
       #main #wrapper .leftSection .LeftContent .commentPost .postItemTitle {
         padding: 12px 57px 13px 0;
-        border-top: 2px solid; }
+        border-top: 2px solid  #DA0000; }
         #main #wrapper .leftSection .LeftContent .commentPost .postItemTitle .h4 {
           position: relative;
           margin: 0;
@@ -770,7 +823,7 @@ body {
       margin-top: 38px; }
       #main #wrapper .leftSection .LeftContent .formPost .postTitle {
         width: 100%;
-        border-top: 2px solid; }
+        border-top: 2px solid  #DA0000; }
         #main #wrapper .leftSection .LeftContent .formPost .postTitle .h4 {
           position: relative;
           margin: 0;
@@ -807,9 +860,10 @@ body {
           font-weight: 600;
           margin-top: 16px;
           transition-duration: 0.4s;
+          background: #DA0000;
           color: white; }
           #main #wrapper .leftSection .LeftContent .formPost .box .btn:hover {
-            background: #000000; }
+            background: #000000 !important; }
 @media screen and (max-width: 991px) {
   #main #wrapper .rightSection {
     padding-left: 0px;
@@ -828,7 +882,7 @@ body {
     #main #wrapper .rightSection .contentRight .sosialLIfe .title {
       position: relative;
       padding: 12px 24px 13px 0;
-      border-top: 2px solid; }
+      border-top: 2px solid #DA0000; }
       #main #wrapper .rightSection .contentRight .sosialLIfe .title .h4 {
         font-size: 16px;
         line-height: 26px;
@@ -939,7 +993,7 @@ body {
     #main #wrapper .rightSection .contentRight .emailPost .postTitle {
       position: relative;
       padding: 12px 24px 13px 0;
-      border-top: 2px solid; }
+      border-top: 2px solid #DA0000; }
       #main #wrapper .rightSection .contentRight .emailPost .postTitle .h4 {
         font-size: 16px;
         line-height: 26px;
@@ -980,7 +1034,7 @@ body {
     #main #wrapper .rightSection .contentRight .featuredPost .postTitle {
       position: relative;
       padding: 12px 24px 13px 0;
-      border-top: 2px solid; }
+      border-top: 2px solid #DA0000; }
       #main #wrapper .rightSection .contentRight .featuredPost .postTitle .h4 {
         font-size: 16px;
         line-height: 26px;
@@ -1041,7 +1095,10 @@ body {
                   padding: 0;
                   font-size: 14px;
                   color: #999;
-                  text-decoration-line: none; }
+                  text-decoration-line: none;
+                  transition-duration: 0.3s; }
+                  #main #wrapper .rightSection .contentRight .featuredPost .postItems .bord li .postImg .postInfo .meta li a:hover {
+                    color: #DA0000; }
             #main #wrapper .rightSection .contentRight .featuredPost .postItems .bord li .postImg .postInfo .title .h4 {
               line-height: 16px; }
               #main #wrapper .rightSection .contentRight .featuredPost .postItems .bord li .postImg .postInfo .title .h4 .btn-link {
@@ -1050,13 +1107,16 @@ body {
                 font-size: 14px;
                 font-weight: 700;
                 line-height: 0px !important;
-                text-decoration-line: none; }
+                text-decoration-line: none;
+                transition-duration: 0.3s; }
+                #main #wrapper .rightSection .contentRight .featuredPost .postItems .bord li .postImg .postInfo .title .h4 .btn-link:hover {
+                  color: #DA0000; }
   #main #wrapper .rightSection .contentRight .advertisementPost {
     margin-top: 60px; }
     #main #wrapper .rightSection .contentRight .advertisementPost .postTitle {
       position: relative;
       padding: 12px 24px 13px 0;
-      border-top: 2px solid; }
+      border-top: 2px solid #DA0000; }
       #main #wrapper .rightSection .contentRight .advertisementPost .postTitle .h4 {
         font-size: 16px;
         line-height: 26px;
@@ -1077,7 +1137,7 @@ body {
     #main #wrapper .rightSection .contentRight .postStatic .postTitle {
       position: relative;
       padding: 12px 24px 13px 0;
-      border-top: 2px solid; }
+      border-top: 2px solid #DA0000; }
       #main #wrapper .rightSection .contentRight .postStatic .postTitle .h4 {
         font-size: 16px;
         line-height: 26px;
@@ -1091,7 +1151,10 @@ body {
         font-size: 16px;
         line-height: 26px; }
         #main #wrapper .rightSection .contentRight .postStatic .postTitle .pageBtn a {
-          color: #999; }
+          color: #999;
+          transition-duration: 0.3s; }
+          #main #wrapper .rightSection .contentRight .postStatic .postTitle .pageBtn a:hover {
+            color: #DA0000; }
     #main #wrapper .rightSection .contentRight .postStatic .postContent {
       padding: 14px 20px 20px;
       background: #F8F8F8; }
@@ -1111,7 +1174,11 @@ body {
           font-size: 14px;
           line-height: 24px;
           font-weight: 600;
-          color: white; }
+          color: white;
+          background: #DA0000;
+          transition-duration: 0.3s; }
+          #main #wrapper .rightSection .contentRight .postStatic .postContent .box .btn:hover {
+            background: black !important; }
       #main #wrapper .rightSection .contentRight .postStatic .postContent .indicator {
         display: flex;
         font-size: 12px;
@@ -1166,7 +1233,7 @@ body {
     #main #wrapper .rightSection .contentRight .readersOpinion .postTitle {
       position: relative;
       padding: 12px 24px 13px 0;
-      border-top: 2px solid; }
+      border-top: 2px solid #DA0000; }
       #main #wrapper .rightSection .contentRight .readersOpinion .postTitle .h4 {
         font-size: 16px;
         line-height: 26px;
@@ -1178,7 +1245,10 @@ body {
         margin-top: -13px;
         color: #999; }
         #main #wrapper .rightSection .contentRight .readersOpinion .postTitle .postControl a {
-          color: #999; }
+          color: #999;
+          transition-duration: 0.3s; }
+          #main #wrapper .rightSection .contentRight .readersOpinion .postTitle .postControl a:hover {
+            color: #DA0000; }
     #main #wrapper .rightSection .contentRight .readersOpinion .readerContent {
       background: #F8F8F8; }
       #main #wrapper .rightSection .contentRight .readersOpinion .readerContent .contentBox {
@@ -1221,7 +1291,7 @@ body {
     #main #wrapper .rightSection .contentRight .readersOpinion2 .postTitle {
       position: relative;
       padding: 12px 24px 13px 0;
-      border-top: 2px solid; }
+      border-top: 2px solid #DA0000; }
       #main #wrapper .rightSection .contentRight .readersOpinion2 .postTitle .h4 {
         font-size: 16px;
         line-height: 26px;
@@ -1233,7 +1303,10 @@ body {
         margin-top: -13px;
         color: #999; }
         #main #wrapper .rightSection .contentRight .readersOpinion2 .postTitle .postControl a {
-          color: #999; }
+          color: #999;
+          transition-duration: 0.3s; }
+          #main #wrapper .rightSection .contentRight .readersOpinion2 .postTitle .postControl a:hover {
+            color: #DA0000; }
     #main #wrapper .rightSection .contentRight .readersOpinion2 .readerContent {
       background: #F8F8F8; }
       #main #wrapper .rightSection .contentRight .readersOpinion2 .readerContent .contentBox {
@@ -1279,6 +1352,74 @@ body {
                 color: #999999; }
       #main #wrapper .rightSection .contentRight .readersOpinion2 .readerContent .contentBox:nth-child(1) {
         border: none; }
+#main #wrapper .h4 {
+  color: #DA0000; }
+
+.mainColorStyle {
+  transition-duration: 0.7s;
+  left: -251px;
+  padding-top: 10px;
+  padding-left: 8px;
+  padding-right: 20px;
+  background: white;
+  width: 251px;
+  height: 137px;
+  z-index: 99999;
+  position: fixed;
+  top: 186px;
+  border: 1px solid #e9e9e9;
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 9px 46px 0px, rgba(0, 0, 0, 0.12) 0px 11px 15px 0px, rgba(0, 0, 0, 0.2) 0px 24px 38px 0px; }
+  .mainColorStyle .colorContent {
+    position: relative;
+    padding-top: 10px; }
+    .mainColorStyle .colorContent .colorControl {
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      margin: 4px; }
+    .mainColorStyle .colorContent .control1 {
+      cursor: pointer;
+      background: #DA0000; }
+    .mainColorStyle .colorContent .control2 {
+      cursor: pointer;
+      background: #119EE6; }
+    .mainColorStyle .colorContent .control3 {
+      cursor: pointer;
+      background: #179EA8; }
+    .mainColorStyle .colorContent .control4 {
+      cursor: pointer;
+      background: #82B440; }
+    .mainColorStyle .colorContent .control5 {
+      cursor: pointer;
+      background: #F69323; }
+    .mainColorStyle .colorContent .control6 {
+      cursor: pointer;
+      background: #FC5143; }
+    .mainColorStyle .colorContent .control7 {
+      cursor: pointer;
+      background: #D48B91; }
+    .mainColorStyle .colorContent .control8 {
+      cursor: pointer;
+      background: #8CBEB2; }
+    .mainColorStyle .colorContent .control9 {
+      cursor: pointer;
+      background: #00B249; }
+    .mainColorStyle .colorContent .control10 {
+      cursor: pointer;
+      background: #924CF3; }
+  .mainColorStyle .colorControlBtn {
+    position: absolute;
+    right: -51px;
+    top: 0px; }
+    .mainColorStyle .colorControlBtn .colorChange {
+      cursor: pointer;
+      width: 50px;
+      height: 50px;
+      border: none;
+      outline: none;
+      background: #DA0000;
+      color: white;
+      box-shadow: rgba(0, 0, 0, 0.14) 10px 5px 46px 8px, rgba(0, 0, 0, 0.2) 10px 0px 26px -6px; }
 
 footer {
   padding-left: 10px;
@@ -1288,10 +1429,9 @@ footer {
   background: #1D1D1D; }
   footer .footerContainer {
     padding: 0px;
-    margin-top: 15px;
-    padding-top: 60px; }
-    footer .footerContainer .col-lg-3 {
-      min-height: 200px; }
+    margin-top: 15px; }
+    footer .footerContainer .topMargin {
+      padding-top: 60px; }
     footer .footerContainer .box {
       border-top: 2px solid white; }
       footer .footerContainer .box .title {
@@ -1338,7 +1478,8 @@ footer {
           font-size: 13px; }
         footer .footerContainer .box .about .sosialBox a {
           color: #777;
-          font-size: 14px; }
+          font-size: 14px;
+          text-decoration: none; }
     footer .footerContainer .box2 ul {
       padding: 0px; }
       footer .footerContainer .box2 ul li {
@@ -1352,5 +1493,59 @@ footer {
         footer .footerContainer .box2 ul li span {
           margin-left: 5px;
           font-size: 14px; }
+
+.usNewsPowered {
+  padding: 0 5px;
+  width: 100%;
+  min-height: 80px;
+  background: black; }
+  .usNewsPowered .contMax {
+    position: relative; }
+  .usNewsPowered .leftSide {
+    padding: 40px 0;
+    margin: 0px;
+    font-size: 16px; }
+    .usNewsPowered .leftSide span {
+      color: #777777; }
+      .usNewsPowered .leftSide span a {
+        font-size: 14px;
+        text-decoration: none; }
+  .usNewsPowered .rightSide {
+    display: flex;
+    position: absolute;
+    right: 0;
+    padding: 40px 0;
+    font-size: 16px; }
+    .usNewsPowered .rightSide ul {
+      margin-left: 20px; }
+      .usNewsPowered .rightSide ul li {
+        margin: 0 8px; }
+        .usNewsPowered .rightSide ul li a {
+          color: #777777;
+          text-decoration: none; }
+        .usNewsPowered .rightSide ul li .footerSosial {
+          color: white;
+          transition-duration: 0.3s; }
+          .usNewsPowered .rightSide ul li .footerSosial:hover {
+            color: #777777; }
+
+@media screen and (max-width: 768px) {
+  .usNewsPowered .contMax {
+    margin: 0px;
+    max-width: 100%; } }
+@media screen and (max-width: 633px) {
+  .usNewsPowered {
+    text-align: center;
+    padding-top: 5px; }
+    .usNewsPowered .leftSide,
+    .usNewsPowered .rightSide {
+      margin: 0 auto;
+      position: static;
+      padding: 3px 0;
+      display: inline-block; } }
+@media screen and (max-width: 768px) {
+  .footerContainer {
+    margin: 0px !important;
+    max-width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

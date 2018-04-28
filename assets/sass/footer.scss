@@ -7,10 +7,10 @@ footer{
     width: 100%;
     background: #1D1D1D;
     .footerContainer{
-        .col-lg-3{min-height: 200px;}
+         .topMargin{padding-top: 60px;}
+     
     padding: 0px;
     margin-top: 15px;
-    padding-top: 60px;
     .box{
       
         border-top: 2px solid white;
@@ -62,8 +62,6 @@ footer{
                    width: 100%;
                 }
                     .sosial{
-                        // float: left;
-
                         color: white;
                         margin-right: 8px;
                      
@@ -75,6 +73,7 @@ footer{
                     a{
                         color: #777;
                         font-size: 14px;
+                        text-decoration: none;
                     }
                    
             }
@@ -101,4 +100,86 @@ footer{
         }
     }
 }
+
+
+}
+.usNewsPowered{
+    padding: 0 5px;
+    width: 100%;
+    min-height: 80px;
+    background: black;
+    .contMax{ position: relative; }
+    .leftSide{
+       padding: 40px 0;
+       margin:0px;
+       font-size: 16px;
+        span{
+            color:#777777;
+           a{
+               font-size: 14px;
+               text-decoration: none;
+
+           }
+        }
+    }
+    .rightSide{
+         display: flex;
+        position: absolute;
+        right: 0;
+        padding: 40px 0;
+        font-size: 16px;
+        ul{
+          margin-left: 20px;
+            li{
+                margin: 0 8px;
+                a{
+                    color:#777777;
+                    text-decoration: none;
+                }
+                .footerSosial{
+                    color: white;
+                    transition-duration: 0.3s;
+                        &:hover{
+                            color: #777777;
+                        }
+                }
+            }
+        }
+      
+    }
+   
+    
+}
+
+
+@media  screen and (max-width: 768px) {
+    .usNewsPowered{
+       .contMax{
+           margin: 0px;
+           max-width: 100%;
+       }
+}  
+}
+
+@media  screen and (max-width: 633px) {
+    .usNewsPowered{
+     text-align: center;
+      padding-top: 5px;
+       .leftSide,
+       .rightSide{
+           margin: 0 auto;
+           position: static;
+           padding: 3px 0;
+          display: inline-block;
+       }
+}  
+}
+
+
+@media  screen and (max-width: 768px) {
+    .footerContainer{
+        margin: 0px!important;
+        max-width: 100%;
+    }
+
 }
