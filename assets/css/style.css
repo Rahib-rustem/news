@@ -117,7 +117,6 @@ body {
     width: 100%;
     height: 64px;
     padding-top: 18px;
-    background: #DA0000;
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
     z-index: 999; }
     #main .header .maxHeight {
@@ -172,7 +171,7 @@ body {
     transition-duration: 0.6s;
     transition-delay: 0.3s; }
     #main .mobileContent .closee {
-      background: red;
+      z-index: 99999999;
       color: white;
       position: relative;
       left: 256px;
@@ -180,8 +179,9 @@ body {
       height: 40px;
       border: none;
       outline: none;
-      font-weight: 800;
-      font-size: 20px; }
+      font-weight: 400;
+      font-size: 16px;
+      cursor: pointer; }
     #main .mobileContent .mlinks {
       padding-left: 10px;
       top: -25px;
@@ -213,11 +213,13 @@ body {
         font-weight: 600;
         z-index: 0;
         text-decoration-line: none;
-        color: #222222; }
+        color: #222222;
+        transition-duration: 0.3s; }
         #main .centerStyle li .blockk .icons {
           display: block;
           margin-bottom: 4px;
-          text-rendering: auto; }
+          text-rendering: auto;
+          transition-duration: 0.5s; }
     #main .centerStyle .bordNone {
       border-right: none !important; }
   @media only screen and (max-width: 767px) {
@@ -264,6 +266,10 @@ body {
     overflow: hidden;
     z-index: 0;
     height: 50px; }
+    #main #wrapper .news-animate .updatesList .animateWrapper {
+      width: 100000px;
+      animation: marqueeAnimation-54766530 62.3354s linear 0s infinite running;
+      margin-left: 805.375px; }
   #main #wrapper .news-animate .animateWord {
     display: flex;
     -ms-flex-wrap: wrap;
@@ -276,8 +282,6 @@ body {
       color: #777777;
       text-decoration-line: none;
       line-height: 50px; }
-      #main #wrapper .news-animate .animateWord .animate:hover {
-        color: #DA0000; }
 @media only screen and (max-width: 767px) {
   #main #wrapper .contPadding {
     margin: 0px;
@@ -299,8 +303,7 @@ body {
       color: #6B5A55;
       font-size: 14px; }
     #main #wrapper .pageContent li .info {
-      font-size: 13px;
-      color: #DA0000; }
+      font-size: 13px; }
 #main #wrapper .leftSection {
   margin-bottom: 65px; }
   #main #wrapper .leftSection .LeftContent {
@@ -323,8 +326,7 @@ body {
         font-size: 16px;
         line-height: 36px;
         text-align: center;
-        z-index: 1;
-        background: #DA0000; }
+        z-index: 1; }
         #main #wrapper .leftSection .LeftContent .ImgPost .icon .star {
           display: inline-block;
           font: normal normal normal 14px/1 FontAwesome;
@@ -345,8 +347,6 @@ body {
           line-height: 22px;
           z-index: 1;
           transition-duration: 0.3s; }
-          #main #wrapper .leftSection .LeftContent .ImgPost .postMap .btnLink:hover {
-            color: #DA0000; }
           #main #wrapper .leftSection .LeftContent .ImgPost .postMap .btnLink .googleMap {
             display: inline-block;
             margin-right: 10px; }
@@ -371,7 +371,6 @@ body {
           text-decoration-line: none;
           transition-duration: 0.3s; }
           #main #wrapper .leftSection .LeftContent .catsPost .elements li a:hover {
-            background: #DA0000;
             color: white;
             border-color: white; }
     #main #wrapper .leftSection .LeftContent .infoPost .static {
@@ -385,8 +384,6 @@ body {
         color: #6B5A55;
         text-decoration-line: none;
         transition-duration: 0.2s; }
-        #main #wrapper .leftSection .LeftContent .infoPost .static li a:hover {
-          color: #DA0000; }
     #main #wrapper .leftSection .LeftContent .infoPost .title .h5 {
       font-size: 34px;
       line-height: 46px; }
@@ -464,7 +461,8 @@ body {
         margin: 18px -5px 11px;
         color: #6B5A55; }
         #main #wrapper .leftSection .LeftContent .tagsPost .items li:nth-child(1) {
-          border: none; }
+          border: none;
+          background: white !important; }
         #main #wrapper .leftSection .LeftContent .tagsPost .items li {
           display: inline-block;
           margin: 10px 5px 0px;
@@ -472,8 +470,7 @@ body {
           border: 1px solid #807777;
           height: 22px; }
           #main #wrapper .leftSection .LeftContent .tagsPost .items li:hover {
-            border-color: white !important;
-            background: #DA0000; }
+            border-color: white !important; }
           #main #wrapper .leftSection .LeftContent .tagsPost .items li a {
             font-size: 12px;
             padding: 3px 10px;
@@ -593,8 +590,6 @@ body {
             #main #wrapper .leftSection .LeftContent .postAuthorInfo .info .social li a {
               color: #999999;
               transition-duration: 0.3s; }
-              #main #wrapper .leftSection .LeftContent .postAuthorInfo .info .social li a:hover {
-                color: #DA0000; }
     @media only screen and (max-width: 390px) {
       #main #wrapper .leftSection .LeftContent .postAuthorInfo {
         padding-right: 0px; }
@@ -620,8 +615,6 @@ body {
         color: #999999;
         transition-duration: 0.3s;
         text-decoration: none; }
-        #main #wrapper .leftSection .LeftContent .postInfor .colorStyle:hover {
-          color: #DA0000; }
       #main #wrapper .leftSection .LeftContent .postInfor .rightPost {
         text-align: right; }
         #main #wrapper .leftSection .LeftContent .postInfor .rightPost .info {
@@ -650,15 +643,13 @@ body {
         font-size: 14px;
         font-weight: 700;
         transition-duration: 0.3s; }
-        #main #wrapper .leftSection .LeftContent .postInfor .rightPost .btn-link:hover, #main #wrapper .leftSection .LeftContent .postInfor .leftPost .btn-link:hover {
-          color: #DA0000; }
     #main #wrapper .leftSection .LeftContent .postRelated {
       padding: 0px;
       position: relative;
       padding-top: 30px; }
       #main #wrapper .leftSection .LeftContent .postRelated .postItemTitle {
         padding: 12px 57px 13px 0;
-        border-top: 2px solid  #DA0000; }
+        border-top: 2px solid; }
         #main #wrapper .leftSection .LeftContent .postRelated .postItemTitle .h4 {
           position: relative;
           margin: 0;
@@ -680,8 +671,6 @@ body {
             transition-duration: 0.3s;
             text-decoration: none;
             color: #999999; }
-            #main #wrapper .leftSection .LeftContent .postRelated .postItemTitle .arrows .btnLink:hover {
-              color: #DA0000; }
       #main #wrapper .leftSection .LeftContent .postRelated .postItem img {
         width: 100%;
         opacity: 0.8 0.5;
@@ -702,8 +691,6 @@ body {
         background: #2A2A2A;
         text-decoration: none;
         transition-duration: 0.3s; }
-        #main #wrapper .leftSection .LeftContent .postRelated .postItem .cat:hover {
-          background: #DA0000; }
       #main #wrapper .leftSection .LeftContent .postRelated .postItem .icon {
         position: absolute;
         top: 15px;
@@ -714,7 +701,6 @@ body {
         line-height: 36px;
         text-align: center;
         z-index: 1;
-        background: #DA0000;
         transition-duration: 0.3s !important; }
         #main #wrapper .leftSection .LeftContent .postRelated .postItem .icon:hover {
           background: #1B1A1B !important; }
@@ -735,8 +721,6 @@ body {
           color: white;
           text-decoration-line: none;
           transition-duration: 0.3s; }
-          #main #wrapper .leftSection .LeftContent .postRelated .postItem .postInfo .meta li a:hover {
-            color: #DA0000; }
         #main #wrapper .leftSection .LeftContent .postRelated .postItem .postInfo .title .h4 {
           margin-left: 4px;
           line-height: 15px;
@@ -748,8 +732,6 @@ body {
             font-size: 13px;
             font-weight: 600;
             transition-duration: 0.3s; }
-            #main #wrapper .leftSection .LeftContent .postRelated .postItem .postInfo .title .h4 a:hover {
-              color: #DA0000; }
       #main #wrapper .leftSection .LeftContent .postRelated .postItem .postContent {
         margin-top: 8px;
         font-size: 13px;
@@ -760,14 +742,12 @@ body {
         font-size: 13px;
         text-decoration: none;
         transition-duration: 0.3s; }
-        #main #wrapper .leftSection .LeftContent .postRelated .postItem .postReading a:hover {
-          color: #DA0000; }
     #main #wrapper .leftSection .LeftContent .commentPost {
       position: relative;
       padding-top: 60px; }
       #main #wrapper .leftSection .LeftContent .commentPost .postItemTitle {
         padding: 12px 57px 13px 0;
-        border-top: 2px solid  #DA0000; }
+        border-top: 2px solid; }
         #main #wrapper .leftSection .LeftContent .commentPost .postItemTitle .h4 {
           position: relative;
           margin: 0;
@@ -823,7 +803,7 @@ body {
       margin-top: 38px; }
       #main #wrapper .leftSection .LeftContent .formPost .postTitle {
         width: 100%;
-        border-top: 2px solid  #DA0000; }
+        border-top: 2px solid; }
         #main #wrapper .leftSection .LeftContent .formPost .postTitle .h4 {
           position: relative;
           margin: 0;
@@ -860,7 +840,6 @@ body {
           font-weight: 600;
           margin-top: 16px;
           transition-duration: 0.4s;
-          background: #DA0000;
           color: white; }
           #main #wrapper .leftSection .LeftContent .formPost .box .btn:hover {
             background: #000000 !important; }
@@ -882,7 +861,7 @@ body {
     #main #wrapper .rightSection .contentRight .sosialLIfe .title {
       position: relative;
       padding: 12px 24px 13px 0;
-      border-top: 2px solid #DA0000; }
+      border-top: 2px solid; }
       #main #wrapper .rightSection .contentRight .sosialLIfe .title .h4 {
         font-size: 16px;
         line-height: 26px;
@@ -993,7 +972,7 @@ body {
     #main #wrapper .rightSection .contentRight .emailPost .postTitle {
       position: relative;
       padding: 12px 24px 13px 0;
-      border-top: 2px solid #DA0000; }
+      border-top: 2px solid; }
       #main #wrapper .rightSection .contentRight .emailPost .postTitle .h4 {
         font-size: 16px;
         line-height: 26px;
@@ -1034,7 +1013,7 @@ body {
     #main #wrapper .rightSection .contentRight .featuredPost .postTitle {
       position: relative;
       padding: 12px 24px 13px 0;
-      border-top: 2px solid #DA0000; }
+      border-top: 2px solid; }
       #main #wrapper .rightSection .contentRight .featuredPost .postTitle .h4 {
         font-size: 16px;
         line-height: 26px;
@@ -1097,8 +1076,6 @@ body {
                   color: #999;
                   text-decoration-line: none;
                   transition-duration: 0.3s; }
-                  #main #wrapper .rightSection .contentRight .featuredPost .postItems .bord li .postImg .postInfo .meta li a:hover {
-                    color: #DA0000; }
             #main #wrapper .rightSection .contentRight .featuredPost .postItems .bord li .postImg .postInfo .title .h4 {
               line-height: 16px; }
               #main #wrapper .rightSection .contentRight .featuredPost .postItems .bord li .postImg .postInfo .title .h4 .btn-link {
@@ -1109,14 +1086,12 @@ body {
                 line-height: 0px !important;
                 text-decoration-line: none;
                 transition-duration: 0.3s; }
-                #main #wrapper .rightSection .contentRight .featuredPost .postItems .bord li .postImg .postInfo .title .h4 .btn-link:hover {
-                  color: #DA0000; }
   #main #wrapper .rightSection .contentRight .advertisementPost {
     margin-top: 60px; }
     #main #wrapper .rightSection .contentRight .advertisementPost .postTitle {
       position: relative;
       padding: 12px 24px 13px 0;
-      border-top: 2px solid #DA0000; }
+      border-top: 2px solid; }
       #main #wrapper .rightSection .contentRight .advertisementPost .postTitle .h4 {
         font-size: 16px;
         line-height: 26px;
@@ -1137,7 +1112,7 @@ body {
     #main #wrapper .rightSection .contentRight .postStatic .postTitle {
       position: relative;
       padding: 12px 24px 13px 0;
-      border-top: 2px solid #DA0000; }
+      border-top: 2px solid; }
       #main #wrapper .rightSection .contentRight .postStatic .postTitle .h4 {
         font-size: 16px;
         line-height: 26px;
@@ -1153,8 +1128,6 @@ body {
         #main #wrapper .rightSection .contentRight .postStatic .postTitle .pageBtn a {
           color: #999;
           transition-duration: 0.3s; }
-          #main #wrapper .rightSection .contentRight .postStatic .postTitle .pageBtn a:hover {
-            color: #DA0000; }
     #main #wrapper .rightSection .contentRight .postStatic .postContent {
       padding: 14px 20px 20px;
       background: #F8F8F8; }
@@ -1175,7 +1148,6 @@ body {
           line-height: 24px;
           font-weight: 600;
           color: white;
-          background: #DA0000;
           transition-duration: 0.3s; }
           #main #wrapper .rightSection .contentRight .postStatic .postContent .box .btn:hover {
             background: black !important; }
@@ -1191,8 +1163,7 @@ body {
           border: 0.5px solid #CCCCCC; }
           #main #wrapper .rightSection .contentRight .postStatic .postContent .indicator #progress #bar {
             width: 65%;
-            height: 12px;
-            background-color: red; }
+            height: 12px; }
         #main #wrapper .rightSection .contentRight .postStatic .postContent .indicator #progress2 {
           margin-right: 4px;
           height: 13px;
@@ -1201,8 +1172,7 @@ body {
           border: 0.5px solid #CCCCCC; }
           #main #wrapper .rightSection .contentRight .postStatic .postContent .indicator #progress2 #bar2 {
             width: 28%;
-            height: 12px;
-            background-color: red; }
+            height: 12px; }
         #main #wrapper .rightSection .contentRight .postStatic .postContent .indicator #progress3 {
           margin-right: 4px;
           height: 13px;
@@ -1211,8 +1181,7 @@ body {
           border: 0.5px solid #CCCCCC; }
           #main #wrapper .rightSection .contentRight .postStatic .postContent .indicator #progress3 #bar3 {
             width: 07%;
-            height: 12px;
-            background-color: red; }
+            height: 12px; }
         #main #wrapper .rightSection .contentRight .postStatic .postContent .indicator span {
           margin-top: -3px; }
   #main #wrapper .rightSection .contentRight .postImage {
@@ -1233,7 +1202,7 @@ body {
     #main #wrapper .rightSection .contentRight .readersOpinion .postTitle {
       position: relative;
       padding: 12px 24px 13px 0;
-      border-top: 2px solid #DA0000; }
+      border-top: 2px solid; }
       #main #wrapper .rightSection .contentRight .readersOpinion .postTitle .h4 {
         font-size: 16px;
         line-height: 26px;
@@ -1247,8 +1216,6 @@ body {
         #main #wrapper .rightSection .contentRight .readersOpinion .postTitle .postControl a {
           color: #999;
           transition-duration: 0.3s; }
-          #main #wrapper .rightSection .contentRight .readersOpinion .postTitle .postControl a:hover {
-            color: #DA0000; }
     #main #wrapper .rightSection .contentRight .readersOpinion .readerContent {
       background: #F8F8F8; }
       #main #wrapper .rightSection .contentRight .readersOpinion .readerContent .contentBox {
@@ -1291,7 +1258,7 @@ body {
     #main #wrapper .rightSection .contentRight .readersOpinion2 .postTitle {
       position: relative;
       padding: 12px 24px 13px 0;
-      border-top: 2px solid #DA0000; }
+      border-top: 2px solid; }
       #main #wrapper .rightSection .contentRight .readersOpinion2 .postTitle .h4 {
         font-size: 16px;
         line-height: 26px;
@@ -1305,8 +1272,6 @@ body {
         #main #wrapper .rightSection .contentRight .readersOpinion2 .postTitle .postControl a {
           color: #999;
           transition-duration: 0.3s; }
-          #main #wrapper .rightSection .contentRight .readersOpinion2 .postTitle .postControl a:hover {
-            color: #DA0000; }
     #main #wrapper .rightSection .contentRight .readersOpinion2 .readerContent {
       background: #F8F8F8; }
       #main #wrapper .rightSection .contentRight .readersOpinion2 .readerContent .contentBox {
@@ -1352,8 +1317,6 @@ body {
                 color: #999999; }
       #main #wrapper .rightSection .contentRight .readersOpinion2 .readerContent .contentBox:nth-child(1) {
         border: none; }
-#main #wrapper .h4 {
-  color: #DA0000; }
 
 .mainColorStyle {
   transition-duration: 0.7s;
@@ -1417,7 +1380,6 @@ body {
       height: 50px;
       border: none;
       outline: none;
-      background: #DA0000;
       color: white;
       box-shadow: rgba(0, 0, 0, 0.14) 10px 5px 46px 8px, rgba(0, 0, 0, 0.2) 10px 0px 26px -6px; }
 
@@ -1431,7 +1393,8 @@ footer {
     padding: 0px;
     margin-top: 15px; }
     footer .footerContainer .topMargin {
-      padding-top: 60px; }
+      padding-top: 60px;
+      transition-duration: 0.4s; }
     footer .footerContainer .box {
       border-top: 2px solid white; }
       footer .footerContainer .box .title {
@@ -1463,13 +1426,16 @@ footer {
         footer .footerContainer .box .about .action a {
           color: #777;
           font-size: 14px;
-          text-decoration: none; }
+          text-decoration: none;
+          transition-duration: 0.3s; }
       footer .footerContainer .box .about .sosialBox {
         margin-top: 8px;
         padding-top: 11px; }
         footer .footerContainer .box .about .sosialBox li {
           margin-top: 10px;
           width: 100%; }
+          footer .footerContainer .box .about .sosialBox li a {
+            transition-duration: 0.3s; }
         footer .footerContainer .box .about .sosialBox .sosial {
           color: white;
           margin-right: 8px; }
@@ -1489,7 +1455,8 @@ footer {
         border-bottom: 1px solid #333333;
         padding-bottom: 5px;
         font-size: 14px;
-        cursor: pointer; }
+        cursor: pointer;
+        transition-duration: 0.3s; }
         footer .footerContainer .box2 ul li span {
           margin-left: 5px;
           font-size: 14px; }
@@ -1522,7 +1489,8 @@ footer {
         margin: 0 8px; }
         .usNewsPowered .rightSide ul li a {
           color: #777777;
-          text-decoration: none; }
+          text-decoration: none;
+          transition-duration: 0.3s; }
         .usNewsPowered .rightSide ul li .footerSosial {
           color: white;
           transition-duration: 0.3s; }

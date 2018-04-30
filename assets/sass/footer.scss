@@ -7,14 +7,17 @@ footer{
     width: 100%;
     background: #1D1D1D;
     .footerContainer{
-         .topMargin{padding-top: 60px;}
+         .topMargin{
+             padding-top: 60px;
+            transition-duration: 0.4s;
+            }
      
     padding: 0px;
     margin-top: 15px;
     .box{
       
         border-top: 2px solid white;
-      
+     
         .title{
             position: relative;
             padding: 12px 24px 13px 0;
@@ -52,6 +55,10 @@ footer{
                     color: #777;
                     font-size: 14px;
                     text-decoration: none;
+                    transition-duration: 0.3s;
+                    // &:hover{
+                    //     color: #DA0000;
+                    // }
                 }
             }
             .sosialBox{
@@ -60,6 +67,12 @@ footer{
                 li{
                     margin-top: 10px;
                    width: 100%;
+                   a{
+                       transition-duration: 0.3s;
+                    //    &:hover{
+                    //        color: #DA0000;
+                    //    }
+                   }
                 }
                     .sosial{
                         color: white;
@@ -92,6 +105,10 @@ footer{
                     padding-bottom: 5px;
                     font-size: 14px;
                     cursor: pointer;
+                    transition-duration: 0.3s;
+                    // &:hover{
+                    //     color: #DA0000;
+                    // }
                     span{
                         margin-left: 5px;
                         font-size: 14px;
@@ -118,6 +135,7 @@ footer{
            a{
                font-size: 14px;
                text-decoration: none;
+                    // color: #DA0000;
 
            }
         }
@@ -135,6 +153,10 @@ footer{
                 a{
                     color:#777777;
                     text-decoration: none;
+                    transition-duration: 0.3s;
+                    // &:hover{
+                    //     color: #DA0000;
+                    // }
                 }
                 .footerSosial{
                     color: white;
