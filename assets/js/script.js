@@ -50,14 +50,14 @@ $(document).ready(function(){
             
             $(".focus").focusin(function() {
                 $(this).css({'background': color,'color':'white'})
-                // $('.initial').hide();
+               
             }); 
             
             $(".focus").focusout(function() {
             $(this).css({'background':'#F8F8F8','color':'#999999'})
             }); 
     
-            // $('.initial').css({'background': color, 'color': 'white'})   
+            //  $('.initial').css({'background': color, 'color': 'white'})   
       
     }
 

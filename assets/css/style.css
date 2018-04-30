@@ -1383,6 +1383,11 @@ body {
       color: white;
       box-shadow: rgba(0, 0, 0, 0.14) 10px 5px 46px 8px, rgba(0, 0, 0, 0.2) 10px 0px 26px -6px; }
 
+.backgroundColor,
+.borderColor,
+.textColor {
+  transition-duration: 0.8s; }
+
 footer {
   padding-left: 10px;
   padding-right: 10px;
